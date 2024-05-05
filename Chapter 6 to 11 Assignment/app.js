@@ -44,37 +44,35 @@ alert("given condition for variable a is true");
 }
 // Output=This code is correct
 
-// Case:B
+ // Case:B
 var b = 82;
-if (b++ === 83){
+if (b++ != 83){
 alert("given condition for variable b is true");
 }
-// Output=This code is not correct because is is post increment and it will be remain 82 when is stement runs it will become 83 but in next round when code will run again.
-// the correct code is if (b++ != 83)
+// Output= The Wrong code is (b++ === 83)
 
 // Case:C
 var c = 12;
-if (c++ === 13){
+if(c++ != 13){
 alert("condition 1 is true");
 }
-// output=This code is remain same as 82
-// the correct code is
-// if(c++ != 13)
+// output=this is wrong code(c++ === 13)
 
-if (c === 13){
+
+if (c === 12){
     alert("condition 2 is true");
 }
-// Output= c is not equal to 13 because the value of c is 12
+// Output=Wrong part of the code (c === 13)
 
 if (++c < 14){
     alert("condition 3 is true");
 }
 // Output=This code is true because it's pre incremet and it is  smaller then 14
 
-if(c === 14){
+if(c === 12){
     alert("condition 4 is true");
 }
-// Output=12 will never be equal to 14 so it's false statement    
+// Output=Wrong part of the code(c === 12)    
       
 // Case:D
 var materialCost = 20000;
@@ -88,47 +86,44 @@ alert("The cost equals");
 // Case:E
 if (true){
     alert("True");
-}
-if (false){
+}else if (false){
    alert("false");
-}
+} 
 // Output=This code is dead and i don't know the reason
 
 // case:F
-if("car" < "cat"){
+if("car" > "cat"){
     alert("car is smaller than cat");
 }
-// Output=Cat is smaller then cat this is the mistake the correst code is ("cat" < "car")
+// Output=Wrong Code("cat" < "car")
     
 
 // Question no:06
-// var marks1=prompt("Enter marks obtained in first subject");
-// var marks2=prompt("Enter marks obtained in second subject");
-// var marks3=prompt("Enter marks obtained in third subject");
-// console.log(marks1);
-// console.log(marks2);
-// console.log(marks3);
-// var TotalMarks =marks1+marks2+marks3;
-// var MarksObtained = prompt("Enter total marks of all subject");
-// var Percentage = (TotalMarks % MarksObtained ) * 100;
-// document.write("<h1>Marks Sheet</h1>");
-// document.write("<p>Total Marks: " + TotalMarks + "</p>");
-// document.write("<p>Marks Obtained: " + MarksObtained + "</p>");
-// document.write("<p><strong>Percentage: " + Percentage + "%</strong></p>");
+var marks1=+prompt("Enter marks obtained in first subject");
+var marks2=+prompt("Enter marks obtained in second subject");
+var marks3=+prompt("Enter marks obtained in third subject");
+var TotalMarks =marks1+marks2+marks3;
+var MarksObtained = +prompt("Enter total marks of all subject");
+var Percentage = (TotalMarks / MarksObtained ) * 100;
+document.write("<h1>Marks Sheet</h1>");
+document.write("<p>Total Marks: " + TotalMarks + "</p>");
+document.write("<p>Marks Obtained: " + MarksObtained + "</p>");
+document.write("<p><strong>Percentage: " + Percentage + "%</strong></p>");
 
 
 
 // Question no:07
 var num = Math.floor(Math.random() * 10);
 var guess = prompt("guess the number");
+var num=5;
     
- if (guess==num){
+if (guess==num){
     alert("Bingo! Correctanswer");
-}else if ((guess+1)==num){ 
+}else if (++guess == num){ 
     alert("Close enough to the correct answer");
 }
 else{
-    alert(`wrong answer number is: ` + num);
+    alert(`wrong answer...`);
 }
 
 

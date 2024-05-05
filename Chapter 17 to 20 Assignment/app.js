@@ -66,12 +66,16 @@ var tocheck = false;
 for(i=0; i<bakeryItems.length; i++){
     if(customer === bakeryItems[i]){
         alert("Cake is avaiabe at index " + i + " in our bakery")
+        tocheck=true;
     }else if(customer === bakeryItems[i]){
         alert("apple pie is avaiabe at index" + i + " in our bakery")
+        tocheck=true;
     }else if(customer === bakeryItems[i]){
         alert("Cookie is avaiabe at index" + i + " in our bakery")
+        tocheck=true;
     }else if(customer === bakeryItems[i]){
         alert("chips is avaiabe at index" + i + " in our bakery")
+        tocheck=true;
     }else if(customer === bakeryItems[i]){
         alert("Patties is avaiabe at index" + i + " in our bakery")
         tocheck=true;

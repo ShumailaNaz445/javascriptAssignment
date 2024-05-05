@@ -197,54 +197,16 @@ console.log("Good evening");
 // Question no:07
 
 var time=prompt("Enter your time");
-if(time == "01:00"){
-   console.log("it's 1 am");
-}else if(time == "02:00"){
-    console.log("it's 2 am");
-}else if(time == "03:00"){
-    console.log("it's 3 am");
-}else if(time == "04:00"){
-    console.log("it's 4 am");
-}else if(time == "05:00"){
-    console.log("it's 5 am");
-}else if(time == "06:00"){
-    console.log("it's 6 am");
-}else if(time == "07:00"){
-    console.log("it's 7 am");
-}else if(time == "08:00"){
-    console.log("it's 8 am");
-}else if(time == "09:00"){
-    console.log("it's 9 am");
-}else if(time == "10:00"){
-    console.log("it's 10 am");
-}else if(time == "11:00"){
-    console.log("it's 11 am");
-}else if(time == "12:00"){
-    console.log("it's 12 pm");
-}else if(time == "13:00"){
-    console.log("it's 1 pm");
-}else if(time == "14:00"){
-    console.log("it's 2 pm");
-}else if(time == "15:00"){
-    console.log("it's 3 pm");
-}else if(time == "16:00"){
-    console.log("it's 4 pm");
-}else if(time == "17:00"){
-    console.log("it's 5 pm");
-}else if(time == "18:00"){
-    console.log("it's 6 pm");
-}else if(time == "19:00"){
-    console.log("it's 7 pm");
-}else if(time == "20:00"){
-    console.log("it's 8 pm");
-}else if(time == "21:00"){
-    console.log("it's 9 pm");
-}else if(time == "22:00"){
-    console.log("it's 10 pm");
-}else if(time == "23:00"){
-    console.log("it's 11 pm");
-}else if(time == "24:00"){
-    console.log("it's 12 am");
-}else{
+if(time >= "00:00" &&  time < "12:00"){
+   console.log("Good Morning!");
+}else if(time >= "12:00" && time < "17:00"){
+    console.log("Good Afternoon!");
+}else if(time >= "17:00" && time < "12:00"){
+    console.log("Good Evening!");
+}
+else if(time >= "21:00" && time < "23:59"){
+    console.log("Good Night!");
+}
+else{
     console.log("It's not a time.");
 }

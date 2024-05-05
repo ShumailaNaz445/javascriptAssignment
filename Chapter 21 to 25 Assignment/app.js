@@ -36,10 +36,10 @@ alert(full)
 
 
 // Questioon no:07
-var text="hyderabad";
+var text="Hyderabad";
 for (var i = 0; i < text.length; i++) {
-    if (text.slice(i, i + 5) === "hyder") {
-        text = text.slice(0,i) + "islam" + text.slice(5);
+    if (text.slice(i, i + 5) === "Hyder") {
+        text = text.slice(0,i) + "Islam" + text.slice(5);
     }
 }
 document.write("City: Hyderabad" + "<br>" + "After Replacement: " + text);
@@ -79,6 +79,25 @@ var convert=num.toString().replace("." , "");
 document.write("Result: " + convert);
 
 
+// Question no:13
+var input=prompt("Enter your name");
+for (i=0; i<input.length; i++){
+    if(input.charAt(i) === "!"){
+        alert("Please inter valid username");
+    }else if(input.charAt(i) === "@"){
+        alert("Please inter valid username");
+    }else if(input.charAt(i) === "$"){
+        alert("Please inter valid username");
+    }else if(input.charAt(i) === "#"){
+        alert("Please inter valid username")
+    }
+    else{
+        alert("You have intered a good username")
+    }
+}
+
+
+
 // Question no:14
 var bakeryItems= ["cake" , "apple pie" , "cookie" , "chips" , "patties"];
 var customer=prompt("Welcome to ABC Bakery what do you want to order sir/Maam");
@@ -88,12 +107,16 @@ var tocheck = false;
 for(i=0; i<bakeryItems.length; i++){
     if(lower === bakeryItems[i]){
         alert(lower + " is avaiabe at index " + i + " in our bakery")
+        tocheck=true;
     }else if(lower === bakeryItems[i]){
         alert(lower + " is avaiabe at index" + i + " in our bakery")
+        tocheck=true;
     }else if(lower === bakeryItems[i]){
         alert(lower  + " is avaiabe at index" + i + " in our bakery")
+        tocheck=true;
     }else if(lower === bakeryItems[i]){
         alert(lower + " is avaiabe at index" + i + " in our bakery")
+        tocheck=true;
     }else if(lower === bakeryItems[i]){
         alert(lower +" is avaiabe at index" + i + " in our bakery")
         tocheck=true;
@@ -104,7 +127,15 @@ if (tocheck ===  false){
     alert("We are Sorry. " + lower + " is not available in our bakery");
 }
 
-
+// Question no:15
+var password=/^(?!^\d)(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
+var userInput = prompt("Enter your password: ");
+if(password.test(userInput)){
+    console.log("Valid Password");
+}
+else{
+    console.log("Please enter the valid Password...");
+}
 
 // Question no:16 
 var university = "University of Karachi";
@@ -122,4 +153,13 @@ document.write("Input: " + country)
 document.write("<br>" + "Last character of input is: " + lastChar + "<br>");
 
 
-// Note: i don't know how to perfor, Question no:13 , 15 and 18 please tell me
+// Question no:18
+var quick1="The quick brown fox jumps over the lazy dog"
+var quick=quick1.toLowerCase();
+for (var i = 0; i < quick.length; i++) {
+    if (quick.slice(i, i + 3) === "the") {
+    quick = quick.slice(0, i) + "the" + quick.slice(i + 3);
+        console.log(i);
+}
+}
+    

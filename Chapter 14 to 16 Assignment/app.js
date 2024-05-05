@@ -95,8 +95,9 @@ document.write('<br>'+ breakLine[0] + " " + breakLine[1] + "" + breakLine[2] + "
 var storelist1=[ "Keyboard" , "Mouse" , "Printer" , "Monitor"];
 for ( i=0; i<storelist1.length; i++){
     
-    document.write("<h5> Out </h5>" + storelist1[i])
+    // document.write("<h5> Out </h5>" + storelist1[i])
 }
+document.write()
 
 
 // Question no:14
